@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1 class="t1">CSS3</h1>
+            <ul class="pg">
+                <li class="list"><b>Tipos de selectores</b></li>
+                    <ol>
+                        <li><b>div</b><br>Seleccionamos por etiqueta. Aplicamos estilos a todas las etiquetas que coincidan. <br></li>
+                        <li><b>#page</b><br>Seleccionamos por ID. Aplicamos estilos al elemento que tenga ese id. Debería ser un único elemento. <br></li>
+                        <li><b>.primary</b><br>Seleccionamos por clase. Aplicamos estilos a los elementos que tengan dicha class. Pueden existir varias. <br></li>
+                        <li><b>button.primary</b><br>Mixto. Seleccionamos por múltiples criterios. En este caso, por elemento y por clase. <br></li>
+                    </ol>
+                <li class="list"><b>Pseudo clases</b></li>
+                    <ol>
+                        <li><b>:hover, :active, :focus, :focus-within, :focus-visible</b><br>Pseudoclases relacionadas con acciones de usuario. <br></li>
+                        <li><b>:any-link, :link, :visited, :target</b><br>Pseudoclases relacionadas con enlaces o ubicaciones. <br></li>
+                        <li><b>:lang(), :dir()</b><br>Pseudoclases relacionadas con idiomas. <br></li>
+                        <li><b>:root, :host, :defined, :empty
+                            :first-child, :last-child, :only-child
+                            :first-of-type, :last-of-type, :only-of-type
+                            :nth-child(), :nth-last-child(), :nth-of-type(), :nth-last-of-type()</b><br>Pseudoclases de estructura de documentos HTML. <br></li>
+                        <li><b>:checked, :indeterminate
+                            :enabled, :disabled, :read-only, :read-write, :placeholder-shown, :default
+                            :required, :optional, :valid, :invalid, :user-valid, :user-invalid
+                            :in-range, :out-of-range</b><br>Pseudoclases de formularios HTML <br></li>
+                        <li><b>:fullscreen, :modal</b><br>Pseudoclases relacionadas con el estado de modales o similares. <br></li>
+                        <li><b>:first, :left, :right, :blank</b><br>Pseudoclases de paginado de documentos HTML <br></li>
+                    </ol>
+                <li class="list"><b>Unidades de medida relativas</b></li>
+                    <ol>
+                        <li><b>%</b><br>Relativa a herencia (concretamente, al elemento padre). <br></li>
+                        <li><b>em / rem</b><br>Relativo al font-size en ese elemento. <br></li>
+                        <li><b>ex / rex</b><br>Relativo a la altura del carácter x minúscula. <br></li>
+                        <li><b>ch / rch</b><br>Relativo al ancho del carácter 0. <br></li>
+                        <li><b>cap / rcap</b><br>Relativo a la altura del primer carácter en mayúscula. <br></li>
+                        <li><b>ic / ric</b><br>Relativo al ancho del glifo 水 CJK (Chino-Japones-Koreano). <br></li>
+                        <li><b>lh / rlh</b><br>Relativo al line-height en ese elemento. <br></li>
+                    </ol>
+                <li class="list"><b>Fondos y bordes</b></li>
+                    <ol>
+                        <li><b></b><br><br></li>
+                        <li><b></b><br><br></li>
+                        <li><b></b><br><br></li>
+                        <li><b></b><br><br></li>
+                        <li><b></b><br><br></li>
+                        <li><b></b><br><br></li>
+                    </ol>
+                <li class="list"><b>Modelo de cajas</b></li>
+                    <ol>
+                        <li><b>border</b><br>Es el límite que separa el interior del exterior del elemento. <br></li>
+                        <li><b>margin</b><br>Es la parte exterior del elemento, por fuera del borde. <br></li>
+                        <li><b>padding</b><br>Es la parte interior del elemento, entre el contenido y el borde.<br></li>
+                    </ol>
+                <li class="list"><b>Position</b></li>
+                    <ol>
+                        <li><b>static</b><br>Posicionamiento estático. Utiliza el orden natural de los elementos HTML.<br></li>
+                        <li><b>relative</b><br>Posicionamiento relativo. Los elementos se mueven ligeramente en base a su posición estática.<br></li>
+                        <li><b>absolute</b><br>Posicionamiento absoluto. Los elementos se colocan en base a un contenedor padre.<br></li>
+                        <li><b>fixed</b><br>Posicionamiento fijo. Idem al absoluto, pero aunque hagamos scroll no se mueve.<br></li>
+                        <li><b>sticky</b><br>Posicionamiento fijo con desplazamiento («pegajoso»). Muy usado para pegar elementos a una zona.<br></li>
+                        <li><b>top</b><br>Empuja el elemento una distancia desde la parte superior hacia el inferior.<br></li>
+                        <li><b>bottom</b><br>Empuja el elemento una distancia desde la parte inferior hacia la superior.<br></li>
+                        <li><b>left</b><br>Empuja el elemento una distancia desde la parte izquierda hacia la derecha.<br></li>
+                        <li><b>right</b><br>Empuja el elemento una distancia desde la parte derecha hacia la izquierda.<br></li>
+                        <li><b></b>inset<br>Propiedad de atajo para utilizar todas las anteriores.<br></li>
+                        <li><b>z-index</b><br>Coloca un elemento en el eje de profundidad, colocándolo debajo o encima de otros elementos.<br></li>
+                    </ol>
+                <li class="list"><b>Display</b></li>
+                    <ol>
+                        <li><b>display</b><br>Cambia el tipo de representación del elemento al indicado.<br></li>
+                        <li><b>inline</b><br>Se coloca en horizontal. Se adapta al ancho de su contenido. Ignora width o height.<br></li>
+                        <li><b>block</b><br>Se apila en vertical. Ocupa todo el ancho disponible de su etiqueta contenedora.<br></li>
+                        <li><b>inline-block</b><br>Combinación de los dos anteriores. Se comporta como inline pero no ignora width o height.<br></li>
+                        <li><b>flex</b><br>Utiliza el modelo de cajas flexibles de CSS. Ideal para estructuras de 1 dimensión.<br></li>
+                        <li><b>inline-flex</b><br>Versión en línea (ocupa sólo su contenido) del modelo de cajas flexibles de CSS.<br></li>
+                        <li><b>grid</b><br>Utiliza cuadrículas o rejillas con el modelo de cajas Grid CSS.<br></li>
+                        <li><b>inline-grid</b><br>La versión en línea (ocupa sólo su contenido) del modelo de cajas Grid CSS.<br></li>
+                        <li><b>none</b><br>Oculta el elemento visualmente, como si no existiera en el HTML.<br></li> 
+                    </ol>
+                <li class="list"><b>Responsive Design “Media Queries”</b></li>
+                    <ol>
+                        <li><b>@media ("condición")</b><br>Si se cumple la condición, se aplican los estilos de su interior.<br></li>
+                        <li><b>@media not ("condición")</b><br>Si no se cumple la condición, se aplican los estilos de su interior.<br></li>
+                        <li><b>all</b><br>Todos los dispositivos o medios. El que se utiliza por defecto.<br></li>
+                        <li><b>screen</b><br>Monitores o pantallas de ordenador. Es el más común.<br></li>
+                        <li><b>print</b><br>Documentos de medios impresos o pantallas de previsualización de impresión.<br></li>
+                        <li><b>speech</b><br>Lectores de texto para invidentes (Antes aural, el cuál ya está obsoleto).<br></li>
+                        <li><b>width</b><br>Si el dispositivo tiene el tamaño de ancho exactamente.<br></li>
+                        <li><b>min-width</b><br>Si el dispositivo tiene un tamaño de ancho mayor al indicado.<br></li>
+                        <li><b>height</b><br>Si el dispositivo tiene el tamaño de alto exactamente.<br></li> 
+                        <li><b>min-height</b><br>Si el dispositivo tiene un tamaño de alto mayor al indicado.<br></li>
+                        <li><b>max-height</b><br>Si el dispositivo tiene un tamaño de alto menor al indicado.<br></li>
+                        <li><b>aspect-ratio</b><br>Si el dispositivo encaja con la proporción de aspecto indicada.<br></li>
+                        <li><b>orientation</b><br>Si el dispositivo está en colocado en modo vertical o apaisado.<br></li>
+                    </ol>
+            </ul>
+        <a href="../index.html"><button>Home</button></a>
+</body>
+</html>
